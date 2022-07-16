@@ -16,12 +16,12 @@ label{
 }
 input{
    text-align: center;
+   padding: 5px;
    margin: 10px;
    border-radius: 6px;
 }
 .total_mark{
    margin-left: 6em;
-   margin-right: 28em;
 }
 button{
    padding: 10px 15px 10px 15px;
