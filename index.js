@@ -15,7 +15,7 @@ function  Resultcalculator(){
   
     let totalSubjectMarks = subject1Marks + subject2Marks + subject3Marks + subject4Marks + subject5Marks;
     //subject marks print function
-    document.querySelector("#totalSubjectMarks").innerHTML = `Total Subject-Marks :: ${totalmarks} out of ${totalSubjectMarks}`;
+    document.querySelector("#totalSubjectMarks").innerHTML = `Total Subject-Marks :: ${totalSubjectMarks} out of ${totalmarks}`;
     
    
    document.querySelector("#totalSubject1Markspercentage").innerHTML = `Subject1-Markspercentage :: ${totalSubject1Markspercentage}%`;
