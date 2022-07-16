@@ -1,12 +1,12 @@
 function  Resultcalculator(){
-    //subject 
+    //input subject marks 
     let subject1Marks = +document.querySelector("#subject1Marks").value;
     let subject2Marks = +document.querySelector("#subject2Marks").value;
     let subject3Marks = +document.querySelector("#subject3Marks").value;
     let subject4Marks = +document.querySelector("#subject4Marks").value;
     let subject5Marks = +document.querySelector("#subject5Marks").value;
     let totalmarks = +document.querySelector("#totalmarks").value;
-   
+   // single subject marks percentage calculater
     let totalSubject1Markspercentage = 100 * subject1Marks / (totalmarks/5) ;
     let totalSubject2Markspercentage = 100 * subject2Marks / (totalmarks/5) ;
     let totalSubject3Markspercentage = 100 * subject3Marks / (totalmarks/5) ;
@@ -14,6 +14,7 @@ function  Resultcalculator(){
     let totalSubject5Markspercentage = 100 * subject5Marks / (totalmarks/5) ;
   
     let totalSubjectMarks = subject1Marks + subject2Marks + subject3Marks + subject4Marks + subject5Marks;
+    //subject marks print function
     document.querySelector("#totalSubjectMarks").innerHTML = `Total Subject-Marks :: ${totalSubjectMarks} out of ${totalmarks}`;
     
    
@@ -26,7 +27,7 @@ function  Resultcalculator(){
    let totalSubjectMarkspercentage =  totalSubjectMarks * 100 / totalmarks;
   
     document.querySelector("#totalSubjectMarkspercentage").innerHTML = `percentage :: ${totalSubjectMarkspercentage}% `;
-    
+    //condition check for student awarded grade
   
     if (totalSubjectMarkspercentage  >= 80 && totalSubjectMarkspercentage  <=  100 ){
           document.querySelector("#Grade").innerHTML = `GRADE A1`;
