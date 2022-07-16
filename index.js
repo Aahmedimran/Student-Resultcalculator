@@ -1,5 +1,5 @@
 function  Resultcalculator(){
-    
+    //subject 
     let subject1Marks = +document.querySelector("#subject1Marks").value;
     let subject2Marks = +document.querySelector("#subject2Marks").value;
     let subject3Marks = +document.querySelector("#subject3Marks").value;
