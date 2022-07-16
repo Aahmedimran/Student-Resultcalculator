@@ -28,7 +28,8 @@ button{
    border-radius: 50px;
    margin-top: 20px;
    margin-right: 6em;
-   color: green;
+   background-color: rgb(189, 240, 113);
+   color: white;
 }
 button:hover{
    background-color: black;

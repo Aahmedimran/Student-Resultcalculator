@@ -15,7 +15,7 @@ function  Resultcalculator(){
   
     let totalSubjectMarks = subject1Marks + subject2Marks + subject3Marks + subject4Marks + subject5Marks;
     //subject marks print function
-    document.querySelector("#totalSubjectMarks").innerHTML = `Total Subject-Marks :: ${totalSubjectMarks} out of ${totalmarks}`;
+    document.querySelector("#totalSubjectMarks").innerHTML = `Total Subject-Marks :: ${totalmarks} out of ${totalSubjectMarks}`;
     
    
    document.querySelector("#totalSubject1Markspercentage").innerHTML = `Subject1-Markspercentage :: ${totalSubject1Markspercentage}%`;
@@ -30,7 +30,7 @@ function  Resultcalculator(){
     //condition check for student awarded grade
   
     if (totalSubjectMarkspercentage  >= 80 && totalSubjectMarkspercentage  <=  100 ){
-          document.querySelector("#Grade").innerHTML = `GRADE A1`;
+          document.querySelector("#Grade").innerHTML = `GRADE A<sup>+<sup>`;
     }
     else if (totalSubjectMarkspercentage >= 70 && totalSubjectMarkspercentage <= 80 ){
           document.querySelector("#Grade").innerHTML = `GRADE :: A`;
@@ -49,6 +49,6 @@ function  Resultcalculator(){
     }
   
     else{
-          document.querySelector("#Grade").innerHTML = `GRADE :: F`;
+          document.querySelector("#Grade").innerHTML = `Fail`;
     }
     }
