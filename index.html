@@ -13,36 +13,74 @@
 </head>
     <body>
         <h1>Student Result calculator</h1>
-        <form onsubmit="Resultcalculator(); return false;">
-             <label for="subject1">Enter marks subject 1</label>
-             <input type="number" min="1" required id="subject1Marks" placeholder="Enter marks subject 1">
-                <span id="totalSubject1Markspercentage"></span>
-                     <br>
-            <label for="subject2">Enter marks subject 2</label>
-            <input type="number" min="1" required id="subject2Marks"  placeholder="Enter marks subject 2">
-                <span id="totalSubject2Markspercentage"></span>
-                    <br>
-            <label for="subject3">Enter marks subject 3</label>
-            <input type="number" min="1" required id="subject3Marks" placeholder="Enter marks subject 3">
-                <span id="totalSubject3Markspercentage"></span>
-                    <br>
-            <label for="subject4">Enter marks subject 4</label>
-            <input type="number" min="1" required id="subject4Marks" placeholder="Enter marks subject 4">
-                <span id="totalSubject4Markspercentage"></span>
-                    <br>
-            <label for="subject5">Enter marks subject 5</label>
-            <input type="number" min="1" required id="subject5Marks" placeholder="Enter marks subject 5">
-            <span id="totalSubject5Markspercentage"></span>
-                    <br>
-           <label for="totalmarks">   Total marks    </label>
-           <input type="number" min="1" placeholder="Enter total marks" required id="totalmarks" class="total_mark">
-                    <br>
-                    <button type="submit">Calculate</button>
-        </form>
-        <h3 id="totalSubjectMarks"></h3>
-        <h3 id="totalSubjectMarkspercentage"></h3>
-        <h3 id="Grade"></h3>
-   
+        <!-- <div class="contanier"> -->
+            <div>
+                <table
+                >
+
+                
+                <form onsubmit="Resultcalculator(); return false;">
+                        <h4>Marks</h4>
+                     <label for="subject1">subject 1</label>
+                     <input type="number" min="1" required id="subject1Marks" placeholder="Enter marks subject 1">
+                        
+                            <br>
+                    <label for="subject2">subject 2</label>
+                    <input type="number" min="1"  required id="subject2Marks"  placeholder="Enter marks subject 2">
+                        
+                            <br>
+                    <label for="subject3">subject 3</label>
+                    <input type="number" min="1" required id="subject3Marks" placeholder="Enter marks subject 3">
+                        
+                            <br>
+                    <label for="subject4">subject 4</label>
+                    <input type="number" min="1" required id="subject4Marks" placeholder="Enter marks subject 4">
+                        
+                            <br>
+                    <label for="subject5">subject 5</label>
+                    <input type="number" min="1" required id="subject5Marks" placeholder="Enter marks subject 5">
+                    
+                            <br>
+                   <label for="totalmarks">   Total marks    </label>
+                   <input type="number" min="1" placeholder="Enter total marks" required id="totalmarks" class="total_mark">
+                
+                            <br>
+                 
+                            <button type="submit">Calculate</button>
+                </form>
+            </table>
+            </div>
+            <div>
+                <h3>Subject Marks</h3>
+               <p id="singleSubjectmarks1"></p>
+               <p id="singleSubjectmarks2"></p>
+               <p id="singleSubjectmarks3"></p>
+               <p id="singleSubjectmarks4"></p>
+               <p id="singleSubjectmarks5"></p>
+            </div>
+
+            <div>
+                <h3>Obtaniend Marks</h3>
+                <p id="ObtaniendSubjectmarks1"></p>
+                <p id="ObtaniendSubjectmarks2"></p>
+                <p id="ObtaniendSubjectmarks3"></p>
+                <p id="ObtaniendSubjectmarks4"></p>
+                <p id="ObtaniendSubjectmarks5"></p>
+             </div>
+
+            <div>
+                <h3>Percentage</h3>
+               <p id="totalSubject1Markspercentage"></p>
+               <p id="totalSubject2Markspercentage"></p>
+               <p id="totalSubject3Markspercentage"></p>
+               <p id="totalSubject4Markspercentage"></p>
+               <p id="totalSubject5Markspercentage"></p>
+            </div>
+        
+    </div>
+    <h3 id="totalSubjectMarks"></h3>
+           <h3 id="totalSubjectMarkspercentage"></h3>
+           <h3 id="Grade"></h3>
 <script src="index.js">
   
 </script>
