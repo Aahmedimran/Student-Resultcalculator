@@ -1,4 +1,4 @@
-function  Resultcalculator(){
+ const Resultcalculator = () =>{
     //input-mathed subject marks 
     let subject1Marks = +document.querySelector("#subject1Marks").value;
     let subject2Marks = +document.querySelector("#subject2Marks").value;

@@ -13,14 +13,17 @@
 </head>
     <body>
         <h1>Student Result calculator</h1>
-        <!-- <div class="contanier"> -->
+        <div class="contanier">
             <div>
-                <table
-                >
-
+                <table>
+                
+                    
                 
                 <form onsubmit="Resultcalculator(); return false;">
-                        <h4>Marks</h4>
+                
+
+                   
+                        <th>Marks</th>
                      <label for="subject1">subject 1</label>
                      <input type="number" min="1" required id="subject1Marks" placeholder="Enter marks subject 1">
                         
@@ -48,9 +51,10 @@
                  
                             <button type="submit">Calculate</button>
                 </form>
+            </tr>
             </table>
             </div>
-            <div>
+            <div class="Subject_Marks">
                 <h3>Subject Marks</h3>
                <p id="singleSubjectmarks1"></p>
                <p id="singleSubjectmarks2"></p>
@@ -59,8 +63,8 @@
                <p id="singleSubjectmarks5"></p>
             </div>
 
-            <div>
-                <h3>Obtaniend Marks</h3>
+            <div class="Obtaniend_Marks">
+                <h3 >Obtaniend Marks</h3>
                 <p id="ObtaniendSubjectmarks1"></p>
                 <p id="ObtaniendSubjectmarks2"></p>
                 <p id="ObtaniendSubjectmarks3"></p>
@@ -68,7 +72,7 @@
                 <p id="ObtaniendSubjectmarks5"></p>
              </div>
 
-            <div>
+            <div class="Percentage">
                 <h3>Percentage</h3>
                <p id="totalSubject1Markspercentage"></p>
                <p id="totalSubject2Markspercentage"></p>
